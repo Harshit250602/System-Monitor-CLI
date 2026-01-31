@@ -38,6 +38,7 @@ fn main() -> Result<()> {
                 match key.code {
                     KeyCode::Char('q') => app.quit(),
                     KeyCode::Tab => app.next_tab(),
+                    KeyCode::BackTab => app.previous_tab(),
                     _ => {}
                 }
             }
